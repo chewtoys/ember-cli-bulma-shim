@@ -1,4 +1,7 @@
 {
   "name": "ember-cli-bulma-shim",
-  "dependencies": {}
+  "dependencies": {
+    "bulma": "^0.4.0",
+    "font-awesome": "^4.5.0"
+  }
 }
