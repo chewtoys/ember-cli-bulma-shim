@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-bulma-shim",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "🌌 Addon shim for using 💙 Bulma 💙 in Ember.js",
   "license": "MIT",
   "author": "Tomasz Trojanowicz <imtomqq@gmail.com>",
@@ -49,6 +49,7 @@
     "ember-cli-htmlbars": "^1.1.1",
     "ember-cli-htmlbars-inline-precompile": "^0.3.6",
     "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-jshint": "^1.0.3",
     "ember-cli-qunit": "^3.1.0",
     "ember-cli-sass": "^6.1.2",
     "ember-cli-shims": "^1.1.0",
