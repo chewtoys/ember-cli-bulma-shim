@@ -9,13 +9,13 @@ EmberCLI shim for [Bulma.io](http://bulma.io), a modern CSS framework based on F
 ## Installation
 
 ```shell
-ember install `ember-cli-bulma-shim`
+ember install ember-cli-bulma-shim
 ```
 
 ## Optional
 
 ```shell
-ember install `ember-font-awesome`
+ember install ember-font-awesome
 ```
 
 ## Add Sass Options
