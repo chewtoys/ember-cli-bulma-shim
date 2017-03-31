@@ -1,27 +1,26 @@
 # ember-cli-bulma-shim
 
-This README outlines the details of collaborating on this Ember addon.
+[![npm version](https://badge.fury.io/js/ember-cli-bulma-shim.svg)](https://www.npmjs.com/package/ember-cli-bulma-shim)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-cli-bulma-shim.svg)](http://emberobserver.com/addons/ember-cli-bulma-shim)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-bulma-shim`
-* `npm install`
-* `bower install`
+```shell
+ember install ember-cli-bulma-shim
+```
 
-## Running
+## Add Sass Options
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+Specify include paths in your `ember-cli-build.js`:
 
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+```javascript
+module.exports = function(defaults) {
+  var app = new EmberAddon(defaults, {
+    // Add options here
+    sassOptions: {
+      includePaths: [
+        'bower_components/bulma'
+      ]
+    }
+  });
+```
