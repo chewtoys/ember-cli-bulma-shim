@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-bulma-shim",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "🌌 Addon shim for using 💙 Bulma 💙 in Ember.js",
   "license": "MIT",
   "author": "Tomasz Trojanowicz <imtomqq@gmail.com>",
