@@ -4,7 +4,7 @@
 [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-bulma-shim.svg)](http://emberobserver.com/addons/ember-cli-bulma-shim)
 
 
-EmberCLI shim for [Bulma.io](http://bulma.io), a modern CSS framework based on Flexbox by Jeremy Thomas
+An [ember-cli](http://www.ember-cli.com) shim for [Bulma.io](http://bulma.io), a modern CSS framework based on Flexbox by Jeremy Thomas
 
 ## Installation
 
@@ -13,6 +13,8 @@ ember install ember-cli-bulma-shim
 ```
 
 ## Optional
+
+An [ember-cli](http://www.ember-cli.com) addon for using [Font Awesome](https://github.com/martndemus/ember-font-awesome) icons in [Bulma.io](http://bulma.io)
 
 ```shell
 ember install ember-font-awesome
