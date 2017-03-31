@@ -1,27 +1,28 @@
 /* eslint-env node */
 module.exports = {
-  description: 'Installation blueprint for ember-cli-bulma-shim'
-  normalizeEntityName: function() {},
+  description: 'Installation blueprint for ember-cli-bulma-shim',
 
-  beforeInstall: function() {
-    return this.addBowerPackageToProject('bulma', '^0.4.0').then(function() {
-      return this.addAddonsToProject({
-        packages: [{
-          name: 'ember-cli-sass',
-          target: '^6.1.2'
-        }]
-      });
-    }.bind(this));
+  normalizeEntityName: function() {
+    // this prevents an error when the entityName is
+    // not specified (since that doesn't actually matter
+    // to us
+  },
+
+  afterInstall: function() {
+    return this.addPackagesToProject(
+      [
+        { name: 'ember-cli-sass', target: '^6.1.2' }
+      ]
+    ).then(() => {
+      return this.addBowerPackagesToProject(
+        [
+          { name: 'bulma', target: '^0.4.0' }
+        ]
+      );
+    });
+  },
+
+  isDevelopingAddon: function() {
+    return false;
   }
-
-  // locals: function(options) {
-  //   // Return custom template variables here.
-  //   return {
-  //     foo: options.entity.options.foo
-  //   };
-  // }
-
-  // afterInstall: function(options) {
-  //   // Perform extra work here.
-  // }
 };
