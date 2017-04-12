@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-bulma-shim",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Addon shim for using 💙 Bulma 💙 in EmberCLI",
   "license": "MIT",
   "author": "Tomasz Trojanowicz <imtomqq@gmail.com>",
@@ -33,7 +33,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:each"
+    "test": "ember try:each",
+    "release": "release-it -n"
   },
   "dependencies": {
     "ember-cli-babel": "^5.1.7"
